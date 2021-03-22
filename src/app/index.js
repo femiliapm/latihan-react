@@ -9,7 +9,7 @@ function App() {
   return (
     <BrowserRouter>
       <Fragment>
-        {/* <Header /> */}
+        <Header />
         <Route path="/" exact component={Home} />
         <Route path="/lifecycle" component={LifeCycle} />
       </Fragment>

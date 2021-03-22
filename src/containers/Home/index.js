@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from "react";
 import Button from "../../components/Button";
 import Card from "../../components/Card";
-import Header from "../../components/Header";
 import Data from "./Data";
 
 class Home extends Component {
@@ -30,18 +29,19 @@ class Home extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Home Page</h1>
-        {this.state.isLogin ? <h3>Nama : {this.state.name}</h3> : <Button label="Login" />}
-        <div className="App">
-          <Header />
+        <h1 className="m-2">Home Page</h1>
+        <div className="m-2 d-flex justify-content-center">
+          {this.state.isLogin ? <h3>Nama : {this.state.name}</h3> : <Button label="Login" />}
         </div>
         <div className="d-flex flex-row">
           <Card
             srcImage="https://placeimg.com/200/200/nature"
             title="Tutorial React JS"
           />
-          <Card title="Tutorial Javascript" />
-          <Card title="Tutorial Java Spring Boot" />
+          <Card srcImage="https://placeimg.com/200/200/any"
+            title="Tutorial Javascript" />
+          <Card srcImage="https://placeimg.com/200/200/any"
+            title="Tutorial Java Spring Boot" />
           {Data.map((val) => {
             return <Card title={val.title} srcImage={val.srcImage} />;
           })}

@@ -47,9 +47,11 @@ class LifeCycle extends Component {
     console.log("render");
     return (
       <Fragment>
-        <h1>Lifecycle React JS</h1>
-        {this.state.isUnmount ? "" : <Button label={this.state.text + ` : ` + this.state.count} handleClick={this.handleCount} />}
-        <Link to="/">Back to Home</Link>
+        <div className="d-flex flex-column">
+          <h1 className="m-2">Lifecycle React JS</h1>
+          {this.state.isUnmount ? "" : <Button label={this.state.text + ` : ` + this.state.count} handleClick={this.handleCount} />}
+          <Link to="/">Back to Home</Link>
+        </div>
       </Fragment>
     )
   }

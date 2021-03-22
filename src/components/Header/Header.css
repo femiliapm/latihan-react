@@ -1,4 +1,22 @@
 .header {
-  display: inline-block;
+  background-color: lightsalmon;
+}
+
+ul li {
+  display: inline;
+  list-style: none;
+}
+
+ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
   text-decoration: none;
+  cursor: pointer;
 }

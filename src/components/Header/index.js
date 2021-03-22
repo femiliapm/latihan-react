@@ -1,25 +1,23 @@
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import Home from '../../containers/Home';
-import LifeCycle from '../../containers/Lifecycle';
+import { Link } from 'react-router-dom';
 import "./Header.css";
 
 const Header = () => {
   return (
-      <nav className="header">
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/profile">Profile</Link>
-          </li>
-          <li>
-            <Link to="/lifecycle">Lifecycle</Link>
-          </li>
-        </ul>
-      </nav>
+    <nav className="header p-3">
+      <ul>
+        <li className='ml-3'>
+          <Link className="link" to="/">Home</Link>
+        </li>
+        <li className='ml-3'>
+          <Link className="link" to="/profile">Profile</Link>
+        </li>
+        <li className='ml-3'>
+          <Link className="link" to="/lifecycle">Lifecycle</Link>
+        </li>
+      </ul>
+    </nav>
   )
 }
 
-export default withRouter(Header);
+export default Header;
