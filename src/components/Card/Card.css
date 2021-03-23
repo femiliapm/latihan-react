@@ -1,7 +1,12 @@
+p {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 .card {
   margin: 5px;
   width: 200px;
-  height: 250px;
+  height: 300px;
   border: 1px solid black;
   border-radius: 4px;
 }

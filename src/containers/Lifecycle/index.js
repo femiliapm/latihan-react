@@ -49,7 +49,9 @@ class LifeCycle extends Component {
       <Fragment>
         <div className="d-flex flex-column">
           <h1 className="m-2">Lifecycle React JS</h1>
-          {this.state.isUnmount ? "" : <Button label={this.state.text + ` : ` + this.state.count} handleClick={this.handleCount} />}
+          <div className="d-flex align-items-center">
+            {this.state.isUnmount ? "" : <Button label={this.state.text + ` : ` + this.state.count} handleClick={this.handleCount} />}
+          </div>
           <Link to="/">Back to Home</Link>
         </div>
       </Fragment>
